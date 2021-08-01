@@ -59,10 +59,13 @@ public class Static
 			
 		}			
     			
-		public  void Intermediate_Percentage(String intermediate_Percentage) throws InterruptedException
+		public  void Intermediate_Percentage(String Percentage) throws InterruptedException
 
 		{
-			driver.findElement(Intermediate_Percentage).sendKeys(intermediate_Percentage);
+			driver.findElement(Intermediate_Percentage).click();
+			driver.findElement(Intermediate_Percentage).sendKeys(Percentage);
+			driver.findElement(Intermediate_Percentage).sendKeys(Keys.ENTER);
+			Thread.sleep(4000);
 
 			
 		}
